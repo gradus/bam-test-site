@@ -1,12 +1,12 @@
 {
   "name": "bamTestSite",
   "description": "playing with Bam, The easiest static site generator on the planet.",
-  "version": "0.0.1-10",
+  "version": "0.0.1-12",
   "homepage": "http://",
   "author": "Kris Windham",
   "private": true,
   "scripts": {
-    "start": "bam run"
+    "start": "bin/server"
   },
   "dependencies": {
     "bam": "*",
@@ -16,7 +16,8 @@
     "filed": "*",
     "path": "*",
     "wrench": "*",
-    "pkginfo": "*"
+    "pkginfo": "*",
+    "http-server": "0.2.x"
   },
   "engines": {
     "node": "0.6 || 0.7"

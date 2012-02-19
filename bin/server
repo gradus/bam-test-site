@@ -1,0 +1,13 @@
+var HTTPServer = require('http-server').HTTPServer;
+
+var httpServer = new HTTPServer({
+    root: './gen/',
+    port: process.env.PORT || process.env.C9_PORT || 8000
+});
+
+httpServer.start();
+
+process.on('SIGINT', function() {
+  httpServer.log('http-server stopped.'.red);
+  return process.exit();
+});
