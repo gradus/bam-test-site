@@ -1,0 +1,18 @@
+{
+  "name": "Bam Test",
+  "description": "playing with Bam, The easiest static site generator on the planet.",
+  "version": "0.0.1",
+  "homepage": "http://",
+  "author": "Kris Windham",
+  "private": true,
+  "scripts": {
+    "start": "bin/server"
+  },
+  "dependencies": {
+    "bam": "*"
+  },
+  "engines": {
+    "node": "0.6 || 0.7"
+  },
+  "subdomain": "bam-test"
+}
